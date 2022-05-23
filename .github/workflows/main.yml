@@ -41,6 +41,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
           application_name: express-ddb-testproj
           environment_name: expressddb-tp-env-1
-          version_label: express-ddb-testproj-${{ steps.format-time.outputs.replaced }}
+          version_label: "express-ddb-testproj-source-${{ steps.format-time.outputs.replaced }}"
           region: us-east-1
           deployment_package: deploy.zip
