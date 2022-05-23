@@ -8,7 +8,8 @@ app.use(express.json());
 app.use('/product', productRouter);
 
 app.get('/', (req, res) => {
-   res.send('<h1>Node.js CRUD API</h1> <h4>Message: Success</h4> <p>Version 1.0</p>');
+    res.status(200);
+    res.send('<h1>Node.js CRUD API</h1> <h4>Message: Success</h4> <p>Version 1.0</p>');
 });
 
 app.get('/health', (req, res) => {
